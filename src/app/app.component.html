@@ -1,5 +1,5 @@
-<div class="todoTable" >
-  <h1>Todo Table</h1>
+<div class="placeholderTable" >
+  <h1>Placeholder Table</h1>
   <mat-form-field>
     <mat-label>Filter</mat-label>
     <input matInput (keyup)="applyFilter($event)" placeholder="Eg. Complete Homework">
@@ -12,15 +12,15 @@
   <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
     
     <!-- User ID Column -->
-    <ng-container matColumnDef="userId">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> User </th>
-      <td mat-cell *matCellDef="let element"> {{element.userId}} </td>
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
     </ng-container>
 
     <!-- Todo Id Column -->
-    <ng-container matColumnDef="id">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> Todo ID </th>
-      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    <ng-container matColumnDef="userId">   
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> User </th>
+      <td mat-cell *matCellDef="let element"> {{element.userId}} </td>
     </ng-container>
 
     <!-- Title Column -->

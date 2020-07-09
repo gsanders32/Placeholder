@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   title = 'Placeholder';
 
   dataSource: MatTableDataSource<IToDo>;
-  displayedColumns: string[] = [ 'userId', 'id', 'title', 'completed' ];
+  displayedColumns: string[] = [ 'id', 'userId', 'title', 'completed' ];
   count: number;
   loading = true;
 
